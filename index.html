@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Homepage</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<main>
+
+  <body>
+
+    <div id="div1">
+
+      <header>
+        <h1>MyHealthHaven</h1>
+        <p id="description"> Fill out the following information to learn how to live a healthy lifestyle!</p>
+      </header>
+
+      <!--Survey form-->
+      <form id="surveyForm">
+
+        <div class="type1">
+          <!--Asks Name-->
+          <label id="nameLabel"> Name: </label> </br>
+          <input id="name" type="text"> </br></br>
+
+          <!--Asks Age-->
+          <label id="ageLabel"> Age: </label> </br>
+          <input id="age" type="number" min="13" max="100" placeholder="13+"> </br>
+
+          <!--Asks Gender-->
+          <p>Gender at birth:</p>
+          <select class="dropdown" id="genderDropdown">
+            <option value="Female">Female</option>
+            <option value="Male">Male</option>
+          </select></br></br>
+
+          <!--Asks Weight-->
+          <label id="weightLabel"> Weight: </label> </br>
+          <input id="weight" type="number" min="60" max="600" placeholder="lb"> </br>
+
+
+          <!--Asks Fitness Goals-->
+          <p>What are your physical health goals?</p>
+          <select class="dropdown" id="fitnessDropdown">
+            <option value="Maintain a Healthy Lifestyle">Maintain a Healthy Lifestyle</option>
+            <option value="Build Muscle">Build Muscle</option>
+            <option value="Lose Weight">Lose Weight</option>
+
+          </select>
+          </br></br>
+
+          <!--Submit Button-->
+          <input type="submit" value="Submit" onclick="return getSurveyResults();" id="submit">
+        </div>
+      </form>
+
+    </div>
+
+    <div id="results">
+      <header id"resultsHeader">
+        <h1>Results</h1>
+        <p id="description2"></p>
+      </header>
+      <div class="type1" id="stats">
+        <p id="waterIn"></p>
+        <p id="sleepAmt"></p>
+        <p id="calIn"></p>
+        <p id="exs"></p>
+        <a href="" id="l1" class="lin">Video 1</a>
+        </br>
+        <a href="" id="l2" class="lin">Video 2</a>
+        </br>
+        <a href="" id="l3" class="lin">Video 3</a>
+        </stats>
+        </br></br>
+
+        <button type="button" onclick="home();" id="submit">Return Home</button>
+
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</main>
+
+</html>
